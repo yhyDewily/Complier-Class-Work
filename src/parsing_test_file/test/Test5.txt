@@ -1,0 +1,6 @@
+(Lparen, ()
+(number, 12341324132)
+(plus, +)
+(ident, asdf)
+(times, *)
+(number, 123)

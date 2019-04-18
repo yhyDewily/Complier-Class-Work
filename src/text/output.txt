@@ -1,0 +1,1 @@
+{a=1, minus=3, b=1, d=1, e=1, ident=7, f=1, g=1, plus=5, number=6, q=1, times=2, slash=2}

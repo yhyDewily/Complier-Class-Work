@@ -1,0 +1,7 @@
+(Lparen, ()
+(ident, a)
+(plus, +)
+(number, 15)
+(Rparen, ))
+(times, *)
+(ident, b)

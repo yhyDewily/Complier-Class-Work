@@ -1,0 +1,5 @@
+(Lparen, ()
+(ident, a)
+(minus, -)
+(plus, +)
+(number, 8)

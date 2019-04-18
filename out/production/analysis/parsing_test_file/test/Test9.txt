@@ -1,0 +1,7 @@
+(ident, a)
+(plus, +)
+(Lparen, ()
+(minus, -)
+(number, 9)
+(Rparen, ))
+(minus, -)

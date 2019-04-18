@@ -1,0 +1,8 @@
+(Lparen, ()
+(number, 8)
+(minus, -)
+(ident, a)
+(times, *)
+(slash, /)
+(number, 12)
+(Rparen, ))

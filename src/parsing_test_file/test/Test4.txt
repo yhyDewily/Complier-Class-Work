@@ -1,0 +1,6 @@
+(ident, a)
+(times, *)
+(number, 8)
+(plus, +)
+(number, 9)
+(minus, -)
