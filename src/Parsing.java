@@ -64,7 +64,6 @@ public class Parsing {
         if (sym_index < tokenList.size()){
             sym = tokenList.get(sym_index++);
         } else {
-            fileUtil.outputFile("越界");
             System.out.println("越界");
             System.exit(1);
         }
@@ -74,7 +73,6 @@ public class Parsing {
         if(sym.equals("plus") || sym.equals("minus")) {  //处理 [+|-]
             getSym();
             if (predictmap.get(sym).equals("opt") || predictmap.get(sym).equals("delimiter")) {
-                fileUtil.outputFile("表达式开头+|-后面出错");
                 System.out.println("表达式开头+|-后面出错");
                 System.exit(1);
             }
@@ -84,7 +82,6 @@ public class Parsing {
         }
         while (sym.equals("plus") || sym.equals("minus")) {
             if (sym_index >= tokenList.size()) {
-                fileUtil.outputFile("+ | -后没有标识符或数字");
                 System.out.println("+ | -后没有标识符或数字");
                 System.exit(1);
             }
@@ -100,7 +97,6 @@ public class Parsing {
             getSym();
             if (sym.equals("times") || sym.equals("slash") ||
                 sym.equals("plus") || sym.equals("minus")) {
-                fileUtil.outputFile("<项>里面出现多余的运算符号");
                 System.out.println("<项>里面出现多余的运算符号");
                 System.exit(1);
             }
@@ -125,12 +121,10 @@ public class Parsing {
                 return 0;
             }
             else {
-                fileUtil.outputFile("缺少右括号");
                 System.out.println("缺少右括号");
                 System.exit(1);
             }
         } else {
-            fileUtil.outputFile("+ | -号后面未跟数字或标识符");
             System.out.println("+ | -号后面未跟数字或标识符");
             System.exit(1);
         }
@@ -157,7 +151,6 @@ public class Parsing {
         }
         parsing.getSym();
         if (parsing.expression() == 0) {
-            fileUtil.outputFile("语法正确");
             System.out.println("语法正确");
         }
     }
